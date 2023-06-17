@@ -1,0 +1,23 @@
+@import "src/styles/colors";
+@import "src/styles/sizes";
+
+.container {
+    padding: $mediumOffset;
+    border: 2px dotted $mark;
+    border-radius: $mediumOffset;
+    justify-content: space-between;
+
+    .info {
+        .email {
+
+        }
+        .number {
+
+        }
+    }
+
+    .control {
+
+    }
+
+}

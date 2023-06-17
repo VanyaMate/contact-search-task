@@ -1,0 +1,27 @@
+@import "src/styles/sizes";
+@import "src/styles/colors";
+
+.container {
+    height: $smallHeight;
+    padding: $smallOffset;
+
+    background: lighten($mark, 3);
+    color: $white;
+    text-transform: uppercase;
+    border-radius: $smallOffset;
+
+    border: none;
+    outline: none;
+
+    pointer-events: none;
+
+    &.active {
+        pointer-events: auto;
+        cursor: pointer;
+        background: $mark;
+
+        &:hover {
+            background: darken($mark, 2);
+        }
+    }
+}

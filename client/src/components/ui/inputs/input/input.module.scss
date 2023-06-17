@@ -1,0 +1,10 @@
+@import "src/styles/sizes";
+
+.container {
+    height: $smallHeight;
+    padding: $mediumOffset;
+    border-radius: $smallOffset;
+
+    border: none;
+    outline: none;
+}

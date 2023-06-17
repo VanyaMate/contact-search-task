@@ -1,0 +1,16 @@
+@import "src/styles/sizes";
+@import "src/styles/colors";
+
+.container {
+
+    .title {
+        font-size: 20px;
+        text-align: center;
+        font-weight: normal;
+        color: $blackBlue;
+        border-bottom: 2px dotted $mark;
+        padding-bottom: $mediumOffset;
+        margin-bottom: $mediumOffset;
+    }
+
+}

@@ -1,0 +1,22 @@
+@keyframes loading {
+    0% {
+        opacity: .8;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: .8;
+    }
+}
+
+.container {
+    width: 100%;
+
+    /**
+    По хорошему тут сделать pointer-events: none, как мне кажется
+     */
+    &.loading {
+        animation: loading .6s infinite ease-in-out;
+    }
+}

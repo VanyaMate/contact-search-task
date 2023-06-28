@@ -1,9 +1,9 @@
 import {Module} from "@nestjs/common";
-import {ContactModule} from "./contact/contact.module";
+import {ContactApiModule} from "./contact-api/contact-api.module";
 
 @Module({
     imports: [
-        ContactModule,
+        ContactApiModule,
     ]
 })
 export class ApiModule {}

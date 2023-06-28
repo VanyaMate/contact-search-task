@@ -1,11 +1,13 @@
-import PageContainer from "./components/page-container/page-container.component";
-import HomePage from "./pages/home/home.page";
+import SearchForm from "./components/search-form/search-form.component";
+import Content from "./components/content/content.component";
+import SearchResults from "./components/search-results/search-results.component";
 
 const App = () => {
     return (
-        <PageContainer>
-            <HomePage/>
-        </PageContainer>
+        <Content>
+            <SearchForm/>
+            <SearchResults/>
+        </Content>
     );
 };
 

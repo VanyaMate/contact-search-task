@@ -4,6 +4,6 @@ export interface IContact {
 }
 
 export interface IContactSearch {
-    readonly email: string;
-    readonly number?: string;
+    email: string;
+    number?: string;
 }

@@ -5,27 +5,35 @@ import {API_CONTACT} from "../../constants/urls.constants";
 export const contactApi = createApi({
     reducerPath: 'contact/api',
     baseQuery: fetchBaseQuery({
-        baseUrl: API_CONTACT
+        baseUrl: API_CONTACT,
+        credentials: 'include'
     }),
     endpoints: (build) => ({
         create: build.query<boolean, IContact>({
             query: (props) => ({
-                url: 'create',
+                url: '',
                 method: 'post',
                 body: props,
             })
         }),
+        findMany: build.query<IContact[], IContactSearch>({
+            query: (props) => ({
+                url: '',
+                method: 'get',
+                params: props,
+            })
+        }),
         update: build.query<boolean, { filter: IContactSearch, body: IContact }>({
             query: (props) => ({
-                url: 'update',
-                method: 'put',
+                url: '',
+                method: 'patch',
                 params: props.filter,
                 body: props.body
             })
         }),
         delete: build.query<boolean, IContactSearch>({
             query: (filter) => ({
-                url: 'delete',
+                url: '',
                 method: 'delete',
                 params: filter,
             })

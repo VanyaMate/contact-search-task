@@ -1,0 +1,17 @@
+@keyframes loading {
+    0% {
+        opacity: .8;
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        opacity: .8;
+    }
+}
+
+.container {
+    &.loading {
+        animation: loading .6s infinite ease-in-out;
+    }
+}
